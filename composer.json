@@ -1,0 +1,28 @@
+{
+    "name": "winter/package-control",
+    "description": "Controls the availability of Winter themes and plugins through Composer.",
+    "type": "composer-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ben Thomson",
+            "email": "git@alfreido.com"
+        }
+    ],
+    "require": {
+        "composer-plugin-api": "^2.3.0"
+    },
+    "require-dev": {
+        "composer/composer": "^2.5",
+        "phpunit/phpunit": "^9.6",
+        "mockery/mockery": "^1.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Winter\\PackageControl\\": "src"
+        }
+    },
+    "extra": {
+        "class": "Winter\\PackageControl\\Plugin"
+    }
+}
